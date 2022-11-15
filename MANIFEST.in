@@ -1,0 +1,4 @@
+include microblog/schema.sql
+graft microblog/static
+graft microblog/templates
+global-exclude *.pyc
