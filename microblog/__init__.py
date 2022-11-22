@@ -13,7 +13,7 @@ def create_app(test_configuration=None):
         )
     )
 
-    from . import database, authentication, microblog
+    from . import authentication, database, microblog
 
     database.initialize_app(app)
 
