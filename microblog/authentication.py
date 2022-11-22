@@ -99,6 +99,7 @@ def load_logged_in_user():
 @blueprint.route('/logout')
 def logout():
     session.clear()
+
     return redirect(url_for('microblog.index'))
 
 
