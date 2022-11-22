@@ -26,9 +26,7 @@ def initialize_database():
     database = get_database()
 
     with current_app.open_resource('schema.sql') as file:
-        database.executescript(
-            file.read().decode('utf8')
-        )
+        database.executescript(file.read().decode('utf8'))
 
 
 @click.command('initialize-database')
